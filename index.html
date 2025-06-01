@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="lk.png" type="image/jpeg">
+    <title>Leonita Kajtazi</title>
+  
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+<!-- Swiper CSS -->
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <header class="bg-gray-900 sticky top-0 z-50 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <!-- Titulli -->
+        <h1 class="text-2xl font-bold text-blue-100">Leonita Kajtazi</h1>
+    
+        <!-- Nav Desktop + Hamburger -->
+        <nav class="flex items-center">
+          <!-- Menyja për desktop -->
+          <div class="hidden md:flex space-x-6" id="desktop-menu">
+            <a href="#about" class="text-gray-400 hover:text-blue-600">About</a>
+            <a href="#services" class="text-gray-400 hover:text-blue-600">Services</a>
+            <a href="#projects" class="text-gray-400 hover:text-blue-600">Projects</a>
+            <a href="#testimonials" class="text-gray-400 hover:text-blue-600">Testimonials</a>
+            <a href="#contact" class="text-gray-400 hover:text-blue-600">Contact</a>
+          </div>
+    
+          <!-- Hamburger Button -->
+          <button id="hamburger" class="md:hidden focus:outline-none ml-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-400" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+    
+      <!-- Mobile Menu -->
+      <div id="mobile-menu"
+        class="hidden md:hidden bg-gray-900 py-4 px-6 space-y-4 shadow-lg absolute w-full z-50 top-full left-0 right-0">
+        <a href="#about" class="block text-gray-400 hover:text-blue-600 px-4 py-2">About</a>
+        <a href="#services" class="block text-gray-400 hover:text-blue-600 px-4 py-2">Services</a>
+        <a href="#projects" class="block text-gray-400 hover:text-blue-600 px-4 py-2">Projects</a>
+        <a href="#testimonials" class="block text-gray-400 hover:text-blue-600 px-4 py-2">Testimonials</a>
+        <a href="#contact" class="block text-gray-400 hover:text-blue-600 px-4 py-2">Contact</a>
+      </div>
+    </header>
+    
+
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 text-white py-20 overflow-hidden">
+      <!-- Floating Bubbles -->
+      <div class="absolute inset-0 z-0 pointer-events-none">
+        <img src="icons8-html (1).svg" class="bubble left-10 top-10 animate-bubble1" />
+        <img src="icons8-css (1).svg" class="bubble right-16 top-20 animate-bubble2" />
+        <img src="mongodb.png" class="bubble left-10 bottom-16 animate-bubble7" />
+        <img src="icons8-react-native (1).svg" class="bubble right-1/4 top-1/3 animate-bubble4" />
+        <img src="icons8-express-js.svg" class="bubble left-1/3 bottom-10 animate-bubble5" />
+        <img src="icons8-tailwind-css.svg" class="bubble right-10 bottom-32 animate-bubble6" />
+        <img src="icons8-javascript.svg" class="bubble left-20 top-1/2 animate-bubble7" />
+        <img src="icons8-nodejs (1).svg" class="bubble right-1/3 bottom-24 animate-bubble8" />
+        <img src="icons8-typescript.svg" class="bubble left-1/2 top-1/4 animate-bubble9" />
+      </div>
+      
+    
+      <!-- Foreground content -->
+      <div class="relative z-10 flex flex-wrap items-center max-w-6xl w-full px-4 mx-auto">
+        <!-- Pjesa e majtë me SVG + imazh -->
+        <div class="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center">
+          <div class="relative w-full max-w-md aspect-square">
+            <!-- SVG Shape -->
+   
+      
+            <!-- Imazhi sipër shapit -->
+            <img src="leonita.png" alt="Leonita Kajtazi" class="absolute top-1/2 left-1/2 w-54 h-54 object-cover rounded-full shadow-xl transform -translate-x-1/2 -translate-y-1/2 border-4 border-white" style="background-color: rgb(200 200 237 / var(--tw-bg-opacity, 1))"        />
+          </div>
+        </div>
+      
+        <!-- Pjesa e djathtë me tekst -->
+        <div class="w-full md:w-1/2 text-center md:text-left">
+          <h2 class="text-5xl [@media(max-width:600px)]:text-3xl font-extrabold mb-4">
+            Hello, I'm Leonita Kajtazi
+          </h2>
+          <p class="text-lg mb-6">
+            A Software Developer, System & App Manager, and Graphic/UI Designer 
+            dedicated to building reliable systems and stunning digital experiences.
+          </p>
+          <a href="#contact"
+             class="inline-block bg-blue-900 hover:bg-blue-600 text-white px-8 py-3 rounded-full font-semibold transition duration-300">
+            Let's Work Together
+          </a>
+        </div>
+      </div>
+      
+    </section>
+    
+    
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          
+          <!-- Teksti -->
+          <div class="md:w-2/3">
+            <h3 class="text-4xl font-bold mb-6 text-gray-900">About Me</h3>
+            <p class="text-lg text-gray-700 mb-4" id="developer">
+              I'm a developer and designer with a Bachelor's degree in Computer Science and Engineering, currently focused on building my own digital empire. I specialize in creating modern web applications, crafting engaging visuals, and helping businesses grow through technology.
+            </p>
+            <p class="text-lg text-gray-700" id="into">
+              Passionate about turning ideas into functional, beautiful digital solutions, I combine creativity and code to deliver clean, efficient, and user-friendly products. <br>I'm 21 years old and excited to keep growing in this journey.
+            </p>
+          </div>
+    
+          <!-- Foto -->
+          <div class="md:w-1/3">
+            <img src="sales.png" alt="About Me" class="rounded-lg shadow-lg w-full">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Services Section -->
+    <section id="services" class="py-20" style="background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1));">
+      <div class="container mx-auto text-center">
+        <div class="container mx-auto text-center">
+          <h3 class="text-4xl font-bold mb-10" style="color: rgb(17 24 39 / var(--tw-bg-opacity, 1));">My Services</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+            <!-- Web Development -->
+            <div class="bg-white shadow-lg p-6 rounded-lg transition transform hover:scale-105">
+              <i class="bx bx-code text-blue-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-bold mb-2">Web Development</h4>
+              <p class="text-gray-600 mb-2 font-semibold">Focus: Modern and specialized applications</p>
+              <ul class="text-gray-600 text-left list-disc list-inside text-xs">
+                <li>E-commerce platforms</li>
+                <li>Advanced authentication/authorization systems</li>
+                <li>Complex API integrations</li>
+                <li>WebApps with React, Vue, or Angular</li>
+              </ul>
+            </div>
+    
+            <!-- Software Development -->
+            <div class="bg-white shadow-lg p-6 rounded-lg transition transform hover:scale-105">
+              <i class="bx bx-line-chart text-blue-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-bold mb-2">Software Development</h4>
+              <p class="text-gray-600 mb-2 font-semibold">Focus: Desktop and back-end solutions</p>
+              <ul class="text-gray-600 text-left list-disc list-inside text-xs">
+                <li>Desktop applications for business operations</li>
+                <li>Process automation tools and background agents</li>
+                <li>Hardware/software integrations (IoT-like systems)</li>
+                <li>Microservices architecture with Golang or Rust</li>
+              </ul>
+            </div>
+    
+            <!-- Business Process Systems -->
+            <div class="bg-white shadow-lg p-6 rounded-lg transition transform hover:scale-105">
+              <i class="bx bx-line-chart text-blue-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-bold mb-2">Business Process Systems</h4>
+              <p class="text-gray-600 mb-2 font-semibold">Focus: Company operations management</p>
+              <ul class="text-gray-600 text-left list-disc list-inside text-xs">
+                <li>Custom CRM systems</li>
+                <li>Inventory and supply management</li>
+                <li>Employee and vehicle tracking</li>
+                <li>Automated analytical reporting</li>
+              </ul>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Seksioni i Projekteve -->
+    <div id="projects" class="w-full bg-gray-900 py-12" style="background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));">
+      <div class="px-4 max-w-screen-xl mx-auto">
+        <h2 class="text-3xl font-bold text-white text-center mb-6">My Latest Projects</h2>
+    
+        <!-- GRID -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <a href="https://leonitakajtazi.github.io/Sky/" class="group relative block rounded-lg overflow-hidden shadow-lg">
+            <img src="SKY.png" alt="Website Development" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-400/80 to-transparent opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-in-out"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
+              <h3 class="text-white text-xl font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200" style="padding-bottom: 5px;">Website Development</h3>
+              <p class="text-center text-white text-sm opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200" style="padding-bottom: 5px;">
+                Explore modern websites crafted to perfection.
+    </p>
+              <span class="px-5 py-2 bg-white text-gray-800 rounded-full font-semibold text-sm shadow-md hover:bg-gray-300 transition">See Project</span>
+             
+            </div>
+          </a>
+
+          <a href="https://outdoor.ks.gentrit.space/" class="group relative block rounded-lg overflow-hidden shadow-lg">
+            <img src="kamping.png" alt="Web Applications" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-400/80 to-transparent opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-in-out"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
+              <h3 class="text-white text-xl font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200" style="padding-bottom: 5px;">Web Applications</h3>
+                         <p class="text-center text-white text-sm opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200" style="padding-bottom: 5px;">
+                          Dynamic and scalable web apps for your business.
+              </p>      
+              <span class="px-5 py-2 bg-white text-gray-800 rounded-full font-semibold text-sm shadow-md hover:bg-gray-100 transition">See Project</span>
+            </div>
+          </a>
+    
+          <a href="https://leonitakajtazi.github.io/Login/" class="group relative block rounded-lg overflow-hidden shadow-lg">
+            <img src="login.png" alt="Software Development" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-400/80 to-transparent opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-in-out"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
+              <h3 class="text-white text-xl font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200 "style="padding-bottom: 5px;">Software Development</h3>
+              <p class="text-center text-white text-sm opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200" style="padding-bottom: 5px;">
+                Tailor-made software solutions for your needs.
+    </p>
+              <span class="px-5 py-2 bg-white text-gray-800 rounded-full font-semibold text-sm shadow-md hover:bg-gray-100 transition">See Project</span>
+            </div>
+          </a>
+    
+          <a href="https://leonitakajtazi.github.io/Construction/" class="group relative block rounded-lg overflow-hidden shadow-lg">
+            <img src="cons.png" alt="Employee Management" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-400/80 to-transparent opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-in-out"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
+              <h3 class="text-white text-xl font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200"style="padding-bottom: 5px;">Employee Management</h3>
+                         <p class="text-center text-white text-sm opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200" style="padding-bottom: 5px;">
+                          Solutions for managing your workforce effectively.
+              </p>
+              <span class="px-5 py-2 bg-white text-gray-800 rounded-full font-semibold text-sm shadow-md hover:bg-gray-100 transition">See Project</span>
+            </div>
+          </a>
+    
+          <a href="https://leonitakajtazi.github.io/Rent-A-Car/" class="group relative block rounded-lg overflow-hidden shadow-lg">
+            <img src="rent.png" alt="Social Media Marketing" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-400/80 to-transparent opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-in-out"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
+              <h3 class="text-white text-xl font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200"style="padding-bottom: 5px;">Social Media Marketing</h3>
+                         <p class="text-center text-white text-sm opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200" style="padding-bottom: 5px;">
+                          Boost your presence across all platforms.
+              </p>
+              <span class="px-5 py-2 bg-white text-gray-800 rounded-full font-semibold text-sm shadow-md hover:bg-gray-100 transition">See Project</span>
+            </div>
+          </a>
+    
+          <a href="https://leonitakajtazi.github.io/Dental-Care/" class="group relative block rounded-lg overflow-hidden shadow-lg">
+            <img src="dentcare.png" alt="Graphic Design" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105" style="background-repeat: no-repeat; background-size: cover;">        
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-400/80 to-transparent opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-in-out"></div>  
+            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 space-y-2">
+              <h3 class="text-white text-xl font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200">Graphic Design</h3>
+              <p class="text-center text-white text-sm opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200">
+                Creative designs to make your brand stand out.
+              </p>
+              <span class="px-5 py-2 bg-white text-gray-800 rounded-full font-semibold text-sm shadow-md hover:bg-gray-100 transition-all duration-500 delay-500">See Project</span>
+            </div>
+          </a>
+          
+    
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Projects Section sliderrrr -->
+    <section id="projects" class="bg-gray-200 py-20" style="margin-bottom: 50px;">
+      <div class="container mx-auto text-center">
+        <h3 class="text-4xl font-bold mb-10">More Projects</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          
+          <!-- Project 1 -->
+          <div class="relative group overflow-hidden rounded-lg h-72 p-4 sm:p-6 md:p-8">
+            <img src="dashboard.png" alt="Project 1" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110 rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+              <p class="text-white text-lg">Marketing Dashboard</p>
+            </div>
+          </div>
+    
+          <!-- Project 2 -->
+          <div class="relative group overflow-hidden rounded-lg h-72 p-4 sm:p-6 md:p-8">
+            <img src="ecomm.png" alt="Project 2" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110 rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+              <p class="text-white text-lg">E-commerce Platform</p>
+            </div>
+          </div>
+    
+          <!-- Project 3 -->
+          <div class="relative group overflow-hidden rounded-lg h-72 p-4 sm:p-6 md:p-8">
+            <img src="schol.png" alt="Project 3" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110 rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+              <p class="text-white text-lg">School Management System</p>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+    
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-100">
+      <div class="container mx-auto text-center">
+        <h3 class="text-4xl font-bold mb-10" id="what">What Clients Say</h3>
+        <div class="swiper testimonials-slider">
+          <div class="swiper-wrapper">
+    
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide bg-white shadow-lg p-6 rounded-lg text-center">
+        <img src="sara.jpg" alt="Sarah Thompson" class="mx-auto w-16 h-16 rounded-full mb-4 object-cover">
+        <p class="text-gray-600 italic">Clean and modern design — exactly what we needed.</p>
+        <h4 class="mt-2 text-blue-600 font-bold">- Sarah Thompson</h4>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide bg-white shadow-lg p-6 rounded-lg text-center">
+        <img src="michael.jpg" alt="Michael Lee" class="mx-auto w-16 h-16 rounded-full mb-4 object-cover">
+        <p class="text-gray-600 italic">The dashboard works flawlessly and looks great , good job</p>
+        <h4 class="mt-2 text-blue-600 font-bold">- Michael Lee</h4>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide bg-white shadow-lg p-6 rounded-lg text-center">
+        <img src="jessica.jpg" alt="Jessica Martinez" class="mx-auto w-16 h-16 rounded-full mb-4 object-cover">
+        <p class="text-gray-600 italic">Creative and responsive — our app looks amazing.</p>
+        <h4 class="mt-2 text-blue-600 font-bold">- Jessica Martinez</h4>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide bg-white shadow-lg p-6 rounded-lg text-center">
+        <img src="david.jpg" alt="David Wilson" class="mx-auto w-16 h-16 rounded-full mb-4 object-cover">
+        <p class="text-gray-600 italic">Fast and secure platform — boosted our sales.</p>
+        <h4 class="mt-2 text-blue-600 font-bold">- David Wilson</h4>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="swiper-slide bg-white shadow-lg p-6 rounded-lg text-center">
+        <img src="emily.jpg" alt="Emily Chen" class="mx-auto w-16 h-16 rounded-full mb-4 object-cover">
+        <p class="text-gray-600 italic">Simple and effective booking system. Loved it!</p>
+        <h4 class="mt-2 text-blue-600 font-bold">- Emily Chen</h4>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="swiper-slide bg-white shadow-lg p-6 rounded-lg text-center">
+        <img src="alex.jpg" alt="Alex Brown" class="mx-auto w-16 h-16 rounded-full mb-4 object-cover">
+        <p class="text-gray-600 italic">Spot-on branding and very fast delivery. Thank's To Leonita</p>
+        <h4 class="mt-2 text-blue-600 font-bold">- Alex Brown</h4>
+      </div>
+
+
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  <!-- Swiper JS -->
+
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20" style="padding-top: 2rem; padding-bottom:4rem;">
+        <div class="container mx-auto text-center">
+          <h3 class="text-4xl font-bold mb-10">Contact Me</h3>
+          <form action="https://formspree.io/f/xzzrenaq" method="POST" class="max-w-lg mx-auto">
+            <div class="mb-4">
+              <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded-lg">
+            </div>
+            <div class="mb-4">
+              <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" required>
+            </div>
+            <div class="mb-4">
+              <textarea name="message" placeholder="Your Message" rows="4" class="w-full p-3 border rounded-lg" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500">Send Message</button>
+          </form>
+        </div>
+      </section>
+      
+
+    <!-- Footer -->
+    <footer>
+      <div class="logo" style="margin-bottom: 20px;">
+          <img src="lk1.png" alt="" style="max-width: 120px; height:auto;">
+          <h4 style="font-size:14px;">Creating modern web solutions for your business and brand!</h4>
+          <div class="ikonat">
+            <a href="https://www.facebook.com/leonita.kajtazi.2025" target="_blank">
+              <img src="facebook.png" alt="Facebook" style="margin-right: 15px; margin-top: 10px;">
+            </a>
+            
+            <a href="https://www.instagram.com/leonitaakajtazi" target="_blank">
+              <img src="instagram (1).png" alt="Instagram" style="margin-right: 15px; margin-top: 10px;">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/leonita-kajtazi-402490301/" target="_blank">
+              <img src="linkedin.png" alt="LinkedIn" style="margin-right: 15px; margin-top: 10px;">
+            </a>
+            
+            <a href="mailto:epllana03@gmail.com">
+              <img src="gmail.png" alt="Email" style="margin-right: 15px; margin-top: 10px;">
+            </a>
+            
+      </div>
+  
+      </div>
+      <div class="link">
+        <h2>Quick Link</h2>
+        <ul>
+          <li><a href="/" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About Us</a></li>
+          <li><a href="#services" class="footer-link">Services</a></li>
+          <li><a href="#pages" class="footer-link">Pages</a></li>
+          <li><a href="#contact" class="footer-link">Contacts</a></li>
+        </ul>
+      </div>
+      
+      <div class="pages">
+        <h2>Utility Pages</h2>
+        <ul>
+          <li><a href="#instructions" class="footer-link">Instructions</a></li>
+          <li><a href="#style-guide" class="footer-link">Style Guide</a></li>
+          <li><a href="#licenses" class="footer-link">Licenses</a></li>
+          <li><a href="#404" class="footer-link">404 Not Found</a></li>
+          <li><a href="#password" class="footer-link">Password Protect</a></li>
+        </ul>
+      </div>
+      <style>
+        footer{
+      padding-top:30px;
+      padding-bottom: 20px;
+      background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+      color: white;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin: 0 auto;
+  }
+ 
+  .logo h4{
+    color: white;
+      font-size: 12px;
+      line-height: 22px;
+      opacity: 0.6;
+      font-weight: 500;
+  }
+  .ikonat{
+    display: flex;
+  }
+  
+  .ikonat img{
+      max-width: 25px;
+      width: 100%;
+      height: auto;
+  }
+
+
+  .link h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: white;
+  }
+
+ 
+
+  .pages h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: white;
+  }
+
+  /* Lista në përgjithësi */
+  .link ul,
+  .pages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+
+  .link ul li,
+  .pages ul li {
+    margin-bottom: 10px;
+    color: white;
+  }
+
+/* Stil për <a> që duket si <h3> */
+  .footer-link {
+    font-size: 14px;
+    color: white;
+    opacity: 0.6;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+
+  .footer-link:hover {
+    opacity: 1;
+  }
+      </style>
+  </footer>
+
+    <!-- HR-->
+  <hr style="background-color:gray">
+  <div class="copyright" style="background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1)); color: white; padding-top: 15px; padding-bottom: 15px;">
+      <h5 style="color:white;">@copyright Leonita Kajtazi,All Rights Reserved  By</h5>
+  
+  </div>
+    
+
+      <!-- Scrollll-->
+  <button id="scrollToTopBtn" class="fixed bottom-6 right-6 bg-blue-900 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-opacity opacity-0 invisible">
+    ↑
+  </button>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+    </body>
+</html>
